@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Saludando</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-item>
+      <ion-label position="floating">Floating Label</ion-label>
+      <ion-input [(ngModel)]="this.nombre"></ion-input>
+    </ion-item>
+  </div>
+
+  <div>
+    <ion-button (click)="Saludar()" expand="block" fill="clear" shape="round">
+      Saludar
+    </ion-button>
+  </div>
+
+  <div *ngIf=saludo>
+    <ion-label>{{saludo}}</ion-label>
+  </div>
+
+  
+</ion-content>
